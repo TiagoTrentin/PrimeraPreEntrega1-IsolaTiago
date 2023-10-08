@@ -1,12 +1,7 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from './src/NavBar';
+import ItemListContainer from './src/ItemListContainer';
 
-const App = () => {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  );
-}
+<ItemListContainer greeting="¡Hola! Bienvenido a Automart." />
 
 export default App;
