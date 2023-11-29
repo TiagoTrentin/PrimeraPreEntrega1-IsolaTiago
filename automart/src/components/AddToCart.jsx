@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from './CartContext';
 
-export const ItemDetail = ({ car, description }) => {
+export const AddToCart = ({ car, description }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {

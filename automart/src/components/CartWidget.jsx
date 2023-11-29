@@ -1,5 +1,5 @@
 import React from "react";
-import cartIcon from "../assets/cart.png"; 
+import cartIcon from "../assets/cart.png";
 
 const CartWidget = ({ itemCount }) => {
   const styles = {

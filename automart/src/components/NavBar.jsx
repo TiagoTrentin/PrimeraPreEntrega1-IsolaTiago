@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { CartWidget } from './CartWidget';
-import data from '../data/products.json';
+import CartWidget from './CartWidget';
+import data from '../../../src/data/products.json';
 
 const NavBar = () => {
   const categories = [...new Set(data.map(product => product.category))];
