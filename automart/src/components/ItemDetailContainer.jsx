@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import { ItemDetail } from './ItemDetail';
-import { useCart } from './CartContext';
-
-import data from "../data/products.json";
+import { useCart } from '../context/CartContext';
+import data from '../data/products.json';
 
 export const ItemDetailContainer = () => {
   const [products, setProducts] = useState([]);

@@ -1,28 +1,19 @@
-import React, { useState } from "react";
-import { CardElement, injectStripe } from "react-stripe-elements";
+import React, { useState } from 'react';
+import { CardElement, injectStripe } from 'react-stripe-elements';
 
 const Checkout = ({ stripe }) => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    address: "",
+    name: '',
+    email: '',
+    address: ''
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const { token } = await stripe.createToken({ name: formData.name });
-
-    console.log("Token de tarjeta:", token);
-    console.log("Otros datos del formulario:", formData);
   };
 
   return (

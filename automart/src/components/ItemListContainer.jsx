@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import data from '../data/products.json';
-import { ItemList } from './ItemList';
+import ItemList from './ItemList';
 
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
